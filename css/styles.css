@@ -1,0 +1,25 @@
+/* fonts */
+/* 
+font-family: 'Open Sans'; 
+font-weight: 700;  
+font-weight: 600;           body  nav button title
+font-weight: 400;           bottom top
+
+font-family: 'Raleway';
+font-weight: 700;           hero-title title 
+*/
+
+:root {
+  --text-title-black: #303030;
+  --text-title-white: #ffffff;
+  --text-white: #ffffff;
+  --text-grey: #9da4bd;
+  --text-grey-alfa: rgba(157, 164, 189, 0.6);
+  --text-dark-grey: #555555;
+  --text-button-dark: 303030;
+  --text-button-white: #ffffff;
+  --accent: #ff6c00;
+  --background-white: #ffffff;
+  --background-grey: #f7f7f7;
+  --background-dark-grey: #191c26;
+}
