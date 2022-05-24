@@ -25,6 +25,24 @@ font-weight: 700;           hero-title title
   --background-dark-grey: #191c26;
   --font-main: 'Open Sans', sans-serif;
   --font-decor: 'Raleway', Segoe UI, sans-serif;
+  --margin: 20px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0px;
+}
+
+ul,
+ol {
+  margin: 0px;
+  padding: 0px;
+}
+img {
+  display: block;
 }
 
 body {
@@ -34,6 +52,15 @@ body {
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: var(--text-dark-grey);
+}
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: 1px solid teal;
+}
+.section {
+  padding: 130px 0px;
 }
 
 .list {
@@ -61,6 +88,18 @@ body {
   background-color: var(--accent);
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 /* ____________________________________Header__________________________________ */
 header {
   background-color: var(--background-dark-grey);
@@ -105,12 +144,17 @@ header {
 .social-link:focus {
   color: var(--accent);
 }
+/* ____________________________________Hero__________________________________ */
+.hero {
+  background-color: var(--background-dark-grey);
+}
 .hero-top-text {
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-grey-alfa);
+  margin-bottom: var(--margin);
 }
 .hero-title {
   font-family: var(--font-decor);
@@ -119,7 +163,9 @@ header {
   line-height: 1.18;
   letter-spacing: 0.05em;
   color: var(--title-white);
+  margin-bottom: var(--margin);
 }
+
 .hero-text {
   font-weight: 400;
   font-size: 18px;
@@ -142,6 +188,7 @@ header {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-very-dark);
+  margin-bottom: var(--margin);
 }
 .about-title {
   font-family: var(--font-decor);
@@ -150,6 +197,7 @@ header {
   line-height: 1.16;
   letter-spacing: 0.05em;
   color: var(--title-very-dark);
+  margin-bottom: var(--margin);
 }
 .about-text {
   font-weight: 400;
@@ -157,6 +205,7 @@ header {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--text-dark-grey);
+  margin-bottom: var(--margin);
 }
 .about-coment {
   font-weight: 400;
@@ -164,6 +213,7 @@ header {
   line-height: 1, 86;
   letter-spacing: 0.02em;
   color: var(--text-dark-grey);
+  margin-bottom: 40px;
 }
 .about-button {
   color: var(--title-very-dark);
@@ -179,6 +229,7 @@ header {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-grey-alfa);
+  margin-bottom: var(--margin);
 }
 .price-title {
   font-family: var(--font-decor);
@@ -187,11 +238,15 @@ header {
   line-height: 1.16;
   letter-spacing: 0.05em;
   color: var(--title-white);
+  margin-bottom: 44px;
 }
-/* .price-list {
-} */
-/* .price-item {
-} */
+.price-list {
+  border: 1px dotted grey;
+  padding: 30px 40px;
+}
+.price-item {
+  margin-bottom: var(--margin);
+}
 .price-text {
   font-weight: 400;
   font-size: 18px;
@@ -201,6 +256,10 @@ header {
 }
 .record-button {
   color: var(--text-button-white);
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  margin-top: 50px;
 }
 /* ____________________________________Benefits__________________________________ */
 .benefits {
@@ -208,15 +267,22 @@ header {
 }
 /* .benefits-list {
 } */
-/* .benefits-item {
-} */
+.benefits-item {
+  width: 170px;
+  height: 133px;
+  padding: 20px 24px;
+  outline: 1px dotted grey;
+  background-color: var(--background-grey);
+}
 .benefits-count {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.36;
-  /* text-align: center; */
+  text-align: center;
   letter-spacing: 0.05em;
   color: var(--title-very-dark);
+  display: block;
+  margin-bottom: 6px;
 }
 .plus {
   font-size: 16px;
@@ -236,6 +302,7 @@ header {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-very-dark);
+  margin-bottom: var(--margin);
 }
 .benefits-title {
   font-weight: 700;
@@ -243,6 +310,7 @@ header {
   line-height: 1.16;
   letter-spacing: 0.05em;
   color: var(--title-very-dark);
+  margin-bottom: var(--margin);
 }
 .benefits-text {
   font-weight: 400;
@@ -261,6 +329,7 @@ header {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-very-dark);
+  margin-bottom: var(--margin);
 }
 .masters-title {
   font-family: var(--font-decor);
@@ -269,11 +338,13 @@ header {
   line-height: 1.16;
   letter-spacing: 0.05em;
   color: var(--title-very-dark);
+  margin-bottom: 44px;
 }
 /* .masters-list {
 } */
-/* .masters-item {
-} */
+.masters-item {
+  outline: 1px dotted grey;
+}
 .masters-item-title {
   font-weight: 400;
   font-size: 18px;
@@ -281,6 +352,10 @@ header {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--title-very-dark);
+  margin-bottom: 8px;
+}
+.masters-item > img {
+  margin-bottom: 30px;
 }
 .masters-text {
   font-weight: 400;
@@ -294,15 +369,15 @@ header {
 .gallery {
   background-color: var(--background-white);
 }
-.gallery-title {
-  display: none;
-}
+/* .gallery-title {
+} */
 .gallery-text {
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-very-dark);
+  margin-bottom: 44px;
 }
 /* .gellery-list {
 } */
@@ -325,9 +400,13 @@ header {
 }
 /* ____________________________________Contacts__________________________________ */
 .contacts {
+  background-color: var(--background-dark-grey);
+}
+
+.address {
   font-style: normal;
   text-decoration: none;
-  background-color: var(--background-dark-grey);
+  margin-bottom: 70px;
 }
 
 .contacts-title {
@@ -336,6 +415,7 @@ header {
   line-height: 1.16;
   letter-spacing: 0.05em;
   color: var(--title-white);
+  margin-bottom: 40px;
 }
 /* .contacts-list {
 } */
@@ -346,6 +426,7 @@ header {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--text-grey);
+  margin-bottom: var(--margin);
 }
 .contacts-link {
   color: var(--text-grey);
@@ -360,6 +441,7 @@ header {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--title-white);
+  margin-bottom: var(--margin);
 }
 .schedule-text {
   font-weight: 400;
