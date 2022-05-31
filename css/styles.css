@@ -60,7 +60,7 @@ body {
   /* margin: 0 auto; */
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid teal;
+  /* outline: 1px solid teal; */
 }
 .section {
   padding: 130px 0px;
@@ -163,6 +163,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: baseline;
+  border: 1px solid var(--text-grey);
 }
 .social-list {
   margin-top: auto;
@@ -299,6 +300,7 @@ body {
 /* ____________________________________Price__________________________________ */
 .price {
   max-width: 1280px;
+  height: 718px;
   background-color: var(--background-dark-grey);
   background-image: url(../images/background-price.png);
   background-repeat: no-repeat;
@@ -367,13 +369,37 @@ body {
 .benefits {
   background-color: var(--background-white);
 }
-/* .benefits-list {
-} */
+.benefits-box {
+  display: flex;
+}
+
+.benefits-description {
+  width: 50%;
+  margin-left: 30px;
+  margin-top: 10px;
+  padding-right: 80px;
+}
+
+.benefits-list {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 100px;
+}
+
+.benefits-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.benefits-item:nth-child(even) {
+  margin-top: 35px;
+}
+
 .benefits-item {
   width: 170px;
   height: 133px;
   padding: 20px 24px;
-  outline: 1px dotted grey;
+  /* outline: 1px dotted grey; */
   background-color: var(--background-grey);
 }
 .benefits-count {
@@ -442,11 +468,20 @@ body {
   color: var(--title-very-dark);
   margin-bottom: 44px;
 }
-/* .masters-list {
-} */
-.masters-item {
-  outline: 1px dotted grey;
+
+.masters-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
+
+.masters-item {
+  margin-left: 30px;
+  margin-top: 30px;
+  /* outline: 1px dotted grey; */
+}
+
 .masters-item-title {
   font-weight: 400;
   font-size: 18px;
@@ -456,7 +491,8 @@ body {
   color: var(--title-very-dark);
   margin-bottom: 8px;
 }
-.masters-item > img {
+
+.masters-thumb {
   margin-bottom: 30px;
 }
 .masters-text {
@@ -467,7 +503,44 @@ body {
   letter-spacing: 0.02em;
   color: var(--accent);
 }
+
+/* Social-icons_____________________________ */
+.social-icon-list {
+  display: flex;
+  width: 206px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-white);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.circle:hover,
+.circle:focus {
+  background-color: #fff;
+}
+
+.circle:hover .social-icon,
+.circle:focus .social-icon {
+  fill: var(--accent);
+}
+.circle > a {
+  height: 20px;
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+
 /* ____________________________________Gallery__________________________________ */
+
 .gallery {
   background-color: var(--background-white);
 }
@@ -481,13 +554,25 @@ body {
   color: var(--text-very-dark);
   margin-bottom: 44px;
 }
-/* .gellery-list {
-} */
-/* .gallery-item {
-} */
+.gellery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.gallery-item {
+  margin-top: 30px;
+  margin-left: 30px;
+}
 /* ____________________________________Form__________________________________ */
+.contacts-box {
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+}
+
 .record {
-  background-color: var(--background-dark-grey);
+  flex-grow: 1;
 }
 .record-title {
   font-family: var(--font-decor);
@@ -501,8 +586,21 @@ body {
   color: var(--text-button-white);
 }
 /* ____________________________________Contacts__________________________________ */
-.contacts {
+.connect {
+  width: 1280px;
+  height: 644px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--background-dark-grey);
+  outline: 1px solid red;
+  background-image: url(../images/background-contacts.png);
+  background-repeat: no-repeat;
+  background-position: top 0 right 0;
+}
+.contacts {
+  width: 625px;
+  padding-top: 130px;
+  padding-left: 100px;
 }
 
 .address {
@@ -522,6 +620,14 @@ body {
 /* .contacts-list {
 } */
 
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+  fill: var(--text-grey);
+  stroke: var(--text-grey);
+}
+
 .contacts-item {
   font-weight: 400;
   font-size: 18px;
@@ -533,9 +639,14 @@ body {
 .contacts-link {
   color: var(--text-grey);
 }
-.contacts-link:hover,
-.contacts-link:focus {
+.contacts-item:hover .contacts-link,
+.contacts-item:focus .contacts-link {
   color: var(--text-white);
+}
+
+.contacts-item:hover .contact-icon {
+  fill: var(--background-white);
+  stroke: var(--background-white);
 }
 .schedule-title {
   font-size: 11px;
