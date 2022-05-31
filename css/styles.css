@@ -23,6 +23,7 @@ font-weight: 700;           hero-title title
   --background-white: #ffffff;
   --background-grey: #f7f7f7;
   --background-dark-grey: #191c26;
+  --background-deep-blue: #111319;
   --font-main: 'Open Sans', sans-serif;
   --font-decor: 'Raleway', Segoe UI, sans-serif;
   --margin: 20px;
@@ -287,17 +288,22 @@ body {
 .about-coment {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1, 86;
+  line-height: 1.86;
   letter-spacing: 0.02em;
   color: var(--text-dark-grey);
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 .about-button {
   color: var(--title-very-dark);
 }
 /* ____________________________________Price__________________________________ */
 .price {
+  max-width: 1280px;
   background-color: var(--background-dark-grey);
+  background-image: url(../images/background-price.png);
+  background-repeat: no-repeat;
+  margin-right: auto;
+  margin-left: auto;
 }
 .price-top-text {
   font-weight: 600;
@@ -317,12 +323,32 @@ body {
   color: var(--title-white);
   margin-bottom: 44px;
 }
+
+.price-bloks {
+  display: flex;
+  margin-bottom: 50px;
+}
 .price-list {
-  border: 1px dotted grey;
+  flex-grow: 1;
+  /* border: 1px dotted grey; */
   padding: 30px 40px;
 }
+.price-list:nth-child(odd) {
+  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.price-list:nth-child(even) {
+  background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
 .price-item {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: var(--margin);
+}
+
+.price-item:last-child {
+  margin-bottom: 0;
 }
 .price-text {
   font-weight: 400;
