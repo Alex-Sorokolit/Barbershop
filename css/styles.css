@@ -502,15 +502,20 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--accent);
+  margin-bottom: 30px;
 }
 
 /* Social-icons_____________________________ */
 .social-icon-list {
   display: flex;
+  justify-content: center;
   width: 206px;
   margin-left: auto;
   margin-right: auto;
-  justify-content: space-between;
+}
+
+.social-icon-list .item:not(:last-child) {
+  margin-right: 10px;
 }
 .circle {
   display: flex;
