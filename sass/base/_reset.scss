@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0px;
+}
+
+ul,
+ol {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    display: block;
+}
+
+body {
+    font-family: var(--font-main);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: var(--text-dark-grey);
+}

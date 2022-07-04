@@ -1,0 +1,22 @@
+.contacts-box {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+
+.record {
+    flex-grow: 1;
+}
+
+.record-title {
+    font-family: var(--font-decor);
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    color: var(--title-white);
+}
+
+.send-button {
+    color: var(--text-button-white);
+}

@@ -1,0 +1,59 @@
+.masters {
+    background-color: var(--background-grey);
+}
+
+.masters-top-text {
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-very-dark);
+    margin-bottom: var(--margin);
+}
+
+.masters-title {
+    font-family: var(--font-decor);
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    color: var(--title-very-dark);
+    margin-bottom: 44px;
+}
+
+.masters-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.masters-item {
+    margin-left: 30px;
+    margin-top: 30px;
+    /* outline: 1px dotted grey; */
+}
+
+.masters-item-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--title-very-dark);
+    margin-bottom: 8px;
+}
+
+.masters-thumb {
+    margin-bottom: 30px;
+}
+
+.masters-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--accent);
+    margin-bottom: 30px;
+}

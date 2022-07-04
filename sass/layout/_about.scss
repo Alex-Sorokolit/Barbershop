@@ -1,0 +1,65 @@
+.about {
+    background-color: var(--background-white);
+}
+
+.about-box {
+    display: flex;
+}
+
+.abour-list {
+    display: flex;
+}
+
+.about-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.about-item {
+    display: block;
+}
+
+.about-description {
+    padding-left: 64px;
+    padding-right: 70px;
+}
+
+.about-top-text {
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-very-dark);
+    margin-bottom: var(--margin);
+}
+
+.about-title {
+    font-family: var(--font-decor);
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    color: var(--title-very-dark);
+    margin-bottom: var(--margin);
+}
+
+.about-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--text-dark-grey);
+    margin-bottom: var(--margin);
+}
+
+.about-coment {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: var(--text-dark-grey);
+    margin-bottom: 35px;
+}
+
+.about-button {
+    color: var(--title-very-dark);
+}

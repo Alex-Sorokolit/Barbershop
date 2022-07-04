@@ -1,0 +1,17 @@
+.button {
+    font-family: var(--font-main);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: solid var(--accent);
+    border-radius: 25px;
+    padding: 11px 20px;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--accent);
+}

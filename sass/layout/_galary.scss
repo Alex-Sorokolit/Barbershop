@@ -1,0 +1,26 @@
+.gallery {
+    background-color: var(--background-white);
+}
+
+/* .gallery-title {
+} */
+.gallery-text {
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-very-dark);
+    margin-bottom: 44px;
+}
+
+.gellery-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+.gallery-item {
+    margin-top: 30px;
+    margin-left: 30px;
+}

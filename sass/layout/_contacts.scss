@@ -1,0 +1,83 @@
+.connect {
+    width: 1280px;
+    height: 644px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--background-dark-grey);
+    outline: 1px solid red;
+    background-image: url(../images/background-contacts.png);
+    background-repeat: no-repeat;
+    background-position: top 0 right 0;
+}
+
+.contacts {
+    width: 625px;
+    padding-top: 130px;
+    padding-left: 100px;
+}
+
+.address {
+    font-style: normal;
+    text-decoration: none;
+    margin-bottom: 70px;
+}
+
+.contacts-title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    color: var(--title-white);
+    margin-bottom: 40px;
+}
+
+/* .contacts-list {
+} */
+
+.contact-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    fill: var(--text-grey);
+    stroke: var(--text-grey);
+}
+
+.contacts-item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--text-grey);
+    margin-bottom: var(--margin);
+}
+
+.contacts-link {
+    color: var(--text-grey);
+}
+
+.contacts-item:hover .contacts-link,
+.contacts-item:focus .contacts-link {
+    color: var(--text-white);
+}
+
+.contacts-item:hover .contact-icon {
+    fill: var(--background-white);
+    stroke: var(--background-white);
+}
+
+.schedule-title {
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--title-white);
+    margin-bottom: var(--margin);
+}
+
+.schedule-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.66;
+    letter-spacing: 0.02em;
+    color: var(--text-grey);
+}

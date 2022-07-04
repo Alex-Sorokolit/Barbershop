@@ -1,0 +1,40 @@
+.social-icon-list {
+    display: flex;
+    justify-content: center;
+    width: 206px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-icon-list .item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-white);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.circle:hover,
+.circle:focus {
+    background-color: #fff;
+}
+
+.circle:hover .social-icon,
+.circle:focus .social-icon {
+    fill: var(--accent);
+}
+
+.circle>a {
+    height: 20px;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+}
